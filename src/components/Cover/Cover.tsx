@@ -3,29 +3,27 @@ import styled from '@emotion/styled';
 export default function Cover() {
   return(
     <StyledWrapper>
-      <header></header>
-      <section>
-        <div className="section__content">
-          <div className="section__container">
-            <div className="section__container-name">
-              <div className="section__container-name-bar" />
-              <h2>Min Jang</h2>
-              <div className="section__container-name-bar" />
-            </div>
-            <div className="section__container-info">
-              <h4>FRONT-END DEVELOPER</h4>
-              <hr />
-              <p>Email: jangmin.dev@gmail.com<br />Github: https://github.com/proke03</p>
-            </div>
+      <div className="section__content">
+        <div className="section__container">
+          <div className="section__container-name">
+            <div className="section__container-name-bar" />
+            <h2>Min Jang</h2>
+            <div className="section__container-name-bar" />
           </div>
-          <div id="profile_image" />
+          <div className="section__container-info">
+            <h4>FRONT-END DEVELOPER</h4>
+            <hr />
+            <p>Email: jangmin.dev@gmail.com<br />Github: https://github.com/proke03</p>
+          </div>
         </div>
-      </section>
+        <div id="profile_image" />
+      </div>
     </StyledWrapper>
   )
 }
 
 const StyledWrapper = styled.section`
+  margin-bottom: 72px;
   height: 785px;
   display: flex;
   flex-direction: row;
