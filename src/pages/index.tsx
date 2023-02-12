@@ -4,6 +4,7 @@ import styles from '@/styles/Home.module.css';
 import styled from '@emotion/styled';
 import Cover from '@/components/Cover';
 import Introduction from '@/components/Introduction';
+import Stacks from '@/components/Stacks';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <header></header>
         <Cover />
         <Introduction />
+        <Stacks />
       </main>
     </>
   )

@@ -40,7 +40,6 @@ const StyledWrapper = styled.section`
     div.section__container{
       div.section__container-name{
         padding: 30px 40px 30px 0;
-        /* font-family: Roboto; */
 
         div.section__container-name-bar{
           display: block;
