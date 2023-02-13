@@ -38,15 +38,15 @@ export default function Portfolio() {
           <div className="section__carousel-flexbox" style={style}>
             <div className="section__carousel-item">
               <div className="section__carousel-item-left">
-                <Image src="/starsound.png" alt="starsound" width={150} height={150} />
+                <Image src="/mint.webp" alt="mint icon" width={150} height={150} />
               </div>
               <div className="section__carousel-item-right">
-                <h4>별별소리</h4>
-                <h6>관심사 기반 커뮤니티 서비스</h6>
+                <h4>Mint</h4>
+                <h6>게더타운, zep을 모티브로 한 2D 협업 메타버스 서비스</h6>
                 <p>
                   ㆍ2023년 1월 6일 사내 오픈<br/>
                   ㆍ2023년 상반기 오픈 예정<br/>
-                  ㆍTypescript, React, Redux, Phaser3, HMTL, CSS, Styled-Components<br/>
+                  ㆍ<span>Typescript</span>, <span>React</span>, <span>Redux</span>, Phaser3, HMTL, CSS, <span>Styled-Components</span><br/>
                   ㆍ프론트엔드 3, 백엔드 1, 인프라 1, 디자인 1, 기획 1<br/>
                   ㆍ역할: 프론트엔드, 게임서버<br/>
                 </p>
@@ -54,17 +54,17 @@ export default function Portfolio() {
             </div>
             <div className="section__carousel-item">
               <div className="section__carousel-item-left">
-                <Image src="/starsound.png" alt="starsound" width={150} height={150} />
+                <Image src="/starsound.png" alt="starsound icon" width={150} height={150} />
               </div>
               <div className="section__carousel-item-right">
-                <h4>별별소리2</h4>
+                <h4>별별소리</h4>
                 <h6>관심사 기반 커뮤니티 서비스</h6>
                 <p>
-                  ㆍ2023년 1월 6일 사내 오픈<br/>
-                  ㆍ2023년 상반기 오픈 예정<br/>
-                  ㆍTypescript, React, Redux, Phaser3, HMTL, CSS, Styled-Components<br/>
-                  ㆍ프론트엔드 3, 백엔드 1, 인프라 1, 디자인 1, 기획 1<br/>
-                  ㆍ역할: 프론트엔드, 게임서버<br/>
+                  ㆍ2022년 12월 5일 오픈<br/>
+                  ㆍFront-End<br/>
+                  &nbsp;&nbsp;&nbsp;Javascript, <span>React</span>, Zustand, Apollo Client, TailwindCSS<br/>
+                  ㆍBack-End & Infra<br/>
+                  &nbsp;&nbsp;&nbsp;Typescript, Express, Postgresql, <span>GraphQL</span>, AWS Lightsail<br/>
                 </p>
               </div>
             </div>
