@@ -5,6 +5,7 @@ import styled from '@emotion/styled';
 import Cover from '@/components/Cover';
 import Introduction from '@/components/Introduction';
 import Stacks from '@/components/Stacks';
+import Portfolio from '@/components/Portfolio/Portfolio';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Cover />
         <Introduction />
         <Stacks />
+        <Portfolio />
       </main>
     </>
   )
