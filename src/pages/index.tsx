@@ -1,12 +1,10 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '@/styles/Home.module.css';
-import styled from '@emotion/styled';
 import Cover from '@/components/Cover';
 import Introduction from '@/components/Introduction';
 import Stacks from '@/components/Stacks';
 import Portfolio from '@/components/Portfolio/Portfolio';
 import CareerEducation from '@/components/CareerEducation';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -24,6 +22,7 @@ export default function Home() {
         <Stacks />
         <Portfolio />
         <CareerEducation />
+        <Footer />
       </main>
     </>
   )
