@@ -6,6 +6,7 @@ import Cover from '@/components/Cover';
 import Introduction from '@/components/Introduction';
 import Stacks from '@/components/Stacks';
 import Portfolio from '@/components/Portfolio/Portfolio';
+import CareerEducation from '@/components/CareerEducation';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Introduction />
         <Stacks />
         <Portfolio />
+        <CareerEducation />
       </main>
     </>
   )
