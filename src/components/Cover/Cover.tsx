@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export default function Cover() {
-  return(
+  return (
     <StyledWrapper>
       <div className="section__content">
         <div className="section__container">
@@ -13,13 +13,17 @@ export default function Cover() {
           <div className="section__container-info">
             <h4>FRONT-END DEVELOPER</h4>
             <hr />
-            <p>Email: jangmin.dev@gmail.com<br />Github: https://github.com/proke03</p>
+            <p>
+              Email: jangmin.dev@gmail.com
+              <br />
+              Github: https://github.com/proke03
+            </p>
           </div>
         </div>
         <div id="profile_image" />
       </div>
     </StyledWrapper>
-  )
+  );
 }
 
 const StyledWrapper = styled.section`

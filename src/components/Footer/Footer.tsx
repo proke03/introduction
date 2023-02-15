@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
 
 export default function CareerEducation() {
-  return(
+  return (
     <StyledWrapper>
       <p>감사합니다 :)</p>
     </StyledWrapper>
-  )
+  );
 }
 
 const StyledWrapper = styled.section`

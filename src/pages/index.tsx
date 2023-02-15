@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <header></header>
+        <header />
         <Cover />
         <Introduction />
         <Stacks />
@@ -25,5 +25,5 @@ export default function Home() {
         <Footer />
       </main>
     </>
-  )
+  );
 }
