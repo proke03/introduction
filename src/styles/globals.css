@@ -41,3 +41,35 @@ main {
 header{
   height: 72px;
 }
+
+.slide-in {
+  margin-left: 0;
+  opacity: 1;
+  transition: ease-in-out 0.55s;
+}
+
+.slide-out {
+  margin-left: -100%;
+  opacity: 0;
+  transition: ease-in-out 0.55s;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: ease-in-out 0.55s;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: ease-in-out 0.55s;
+}
+
+.scaleup-in {
+  transform: scale(1);
+  transition: ease-in-out 0.55s;
+}
+
+.scaleup-out {
+  transform: scale(0);
+  transition: ease-in-out 0.55s;
+}

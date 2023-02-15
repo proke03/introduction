@@ -1,10 +1,36 @@
+
+import { useEffect, useRef } from 'react';
 import styled from '@emotion/styled';
 
 export default function Introduction() {
+  const titleRef = useRef(null);
+  
+  useEffect(() => {
+    if(!titleRef.current) return;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('slide-in');
+          entry.target.classList.remove('slide-out');
+          entry.target.classList.add('fade-in');
+          entry.target.classList.remove('fade-out');
+        } else {
+          entry.target.classList.remove('slide-in');
+          entry.target.classList.add('slide-out');
+          entry.target.classList.remove('fade-in');
+          entry.target.classList.add('fade-out');
+        }
+      });
+    });
+
+    observer.observe(titleRef.current);
+  }, [titleRef.current])
+
   return(
     <StyledWrapper>
       <div className="section__container">
-        <div className="section__title">
+        <div className="section__title" ref={titleRef}>
           <h2>INTRODUCTION</h2>
           <div className="section__title-bar" />
         </div>
