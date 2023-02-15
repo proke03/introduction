@@ -1,11 +1,16 @@
+import { useEffect, useRef } from 'react';
 import styled from '@emotion/styled';
 import Stack from './Stack';
+import { useOnScroll } from '@/hooks';
 
 export default function Stacks() {
+  const ref = useRef(null);
+  useOnScroll({ref, animationName: 'fade'});
+
   return(
     <StyledWrapper>
       <div className="section__container">
-        <h3>Tech Stacks</h3>
+        <h3 ref={ref}>Tech Stacks</h3>
         <div className="section__contents">
           <Stack type="html" />
           <Stack type="javascript" />

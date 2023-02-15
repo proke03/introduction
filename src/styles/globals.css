@@ -41,3 +41,47 @@ main {
 header{
   height: 72px;
 }
+
+.slide_ltr-in {
+  margin-left: 0;
+  opacity: 1;
+  transition: ease-in-out 0.55s;
+}
+
+.slide_ltr-out {
+  margin-left: -100%;
+  opacity: 0;
+  transition: ease-in-out 0.55s;
+}
+
+.slide_rtl-in {
+  margin-left: 0;
+  opacity: 1;
+  transition: ease-in-out 0.55s;
+}
+
+.slide_rtl-out {
+  margin-left: 100%;
+  opacity: 0;
+  transition: ease-in-out 0.55s;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: ease-in-out 0.55s;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: ease-in-out 0.55s;
+}
+
+.scaleup-in {
+  transform: scale(1);
+  transition: ease-in-out 0.55s;
+}
+
+.scaleup-out {
+  transform: scale(0);
+  transition: ease-in-out 0.55s;
+}

@@ -1,14 +1,23 @@
+
+import { useRef } from 'react';
 import styled from '@emotion/styled';
+import { useOnScroll } from '@/hooks';
 
 export default function Introduction() {
+  const titleRef = useRef(null);
+  useOnScroll({ref: titleRef, animationName: 'slide_ltr'});
+
+  const contentsRef = useRef(null);
+  useOnScroll({ref: contentsRef, animationName: 'fade'});
+
   return(
     <StyledWrapper>
       <div className="section__container">
-        <div className="section__title">
+        <div className="section__title" ref={titleRef}>
           <h2>INTRODUCTION</h2>
           <div className="section__title-bar" />
         </div>
-        <div className="section__contents">
+        <div className="section__contents" ref={contentsRef}>
           <p className="section__content">
             <span>꾸준히 성장하기 위해 노력</span>합니다. 이를 위해, <br />
             1일 1커밋을 실천하고 있습니다. <span>데이터 시각화</span>에 

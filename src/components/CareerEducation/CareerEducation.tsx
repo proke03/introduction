@@ -1,17 +1,31 @@
+import { useRef } from 'react';
 import styled from '@emotion/styled';
+import { useOnScroll } from '@/hooks';
 
 export default function CareerEducation() {
+  const careerTitleRef = useRef(null);
+  useOnScroll({ref: careerTitleRef, animationName: 'fade'});
+  const careerLeftRef = useRef(null);
+  useOnScroll({ref: careerLeftRef, animationName: 'slide_ltr'});
+  const careerRightRef = useRef(null);
+  useOnScroll({ref: careerRightRef, animationName: 'slide_rtl'});
+
+  const educationTitleRef = useRef(null);
+  useOnScroll({ref: educationTitleRef, animationName: 'fade'});
+  const educationLeftRef = useRef(null);
+  useOnScroll({ref: educationLeftRef, animationName: 'slide_ltr'});
+
   return(
     <StyledWrapper>
       <div className="section__container">
-        <h2>Career</h2>
+        <h2 ref={careerTitleRef}>Career</h2>
         <div className="section__contents">
-          <div className="section__contents-left">
+          <div className="section__contents-left" ref={careerLeftRef}>
             <h3>Tmax Metaverse</h3>
             <p>Tmax 그룹 계열사</p>
             <p>2022.03~</p>
           </div>
-          <div className="section__contents-right">
+          <div className="section__contents-right" ref={careerRightRef}>
             <p>
             Mint 개발 (2022.04.15 ~ )<br />
             프로젝트 주제 선정부터 시작하여, 체험 부스 공개
@@ -21,9 +35,9 @@ export default function CareerEducation() {
             </p>
           </div>
         </div>
-        <h2>Education</h2>
+        <h2 ref={educationTitleRef}>Education</h2>
         <div className="section__contents">
-          <div className="section__contents-left">
+          <div className="section__contents-left" ref={educationLeftRef}>
             <h3>국민대학교</h3>
             <p>컴퓨터공학과</p>
             <p>2016.03~2021.02</p>
@@ -72,6 +86,7 @@ const StyledWrapper = styled.section`
       }
 
       div.section__contents-right{
+        width: 100%;
         padding: 0 39px 0 90px;
         span{
           font-size: 1rem;
