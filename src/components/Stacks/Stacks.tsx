@@ -1,13 +1,13 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import styled from '@emotion/styled';
-import Stack from './Stack';
 import { useOnScroll } from '@/hooks';
+import Stack from './Stack';
 
 export default function Stacks() {
   const ref = useRef(null);
-  useOnScroll({ref, animationName: 'fade'});
+  useOnScroll({ ref, animationName: 'fade' });
 
-  return(
+  return (
     <StyledWrapper>
       <div className="section__container">
         <h3 ref={ref}>Tech Stacks</h3>
@@ -19,7 +19,7 @@ export default function Stacks() {
         </div>
       </div>
     </StyledWrapper>
-  )
+  );
 }
 
 const StyledWrapper = styled.section`

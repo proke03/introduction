@@ -4,18 +4,18 @@ import { useOnScroll } from '@/hooks';
 
 export default function CareerEducation() {
   const careerTitleRef = useRef(null);
-  useOnScroll({ref: careerTitleRef, animationName: 'fade'});
+  useOnScroll({ ref: careerTitleRef, animationName: 'fade' });
   const careerLeftRef = useRef(null);
-  useOnScroll({ref: careerLeftRef, animationName: 'slide_ltr'});
+  useOnScroll({ ref: careerLeftRef, animationName: 'slide_ltr' });
   const careerRightRef = useRef(null);
-  useOnScroll({ref: careerRightRef, animationName: 'slide_rtl'});
+  useOnScroll({ ref: careerRightRef, animationName: 'slide_rtl' });
 
   const educationTitleRef = useRef(null);
-  useOnScroll({ref: educationTitleRef, animationName: 'fade'});
+  useOnScroll({ ref: educationTitleRef, animationName: 'fade' });
   const educationLeftRef = useRef(null);
-  useOnScroll({ref: educationLeftRef, animationName: 'slide_ltr'});
+  useOnScroll({ ref: educationLeftRef, animationName: 'slide_ltr' });
 
-  return(
+  return (
     <StyledWrapper>
       <div className="section__container">
         <h2 ref={careerTitleRef}>Career</h2>
@@ -27,11 +27,12 @@ export default function CareerEducation() {
           </div>
           <div className="section__contents-right" ref={careerRightRef}>
             <p>
-            Mint 개발 (2022.04.15 ~ )<br />
-            프로젝트 주제 선정부터 시작하여, 체험 부스 공개
-            이후인 10월 중순까지 주도적으로 프로젝트 
-            리드. 1월 사내 공개 후, voc 대응하며 이미지와 
-            json 데이터를 연동하는 인하우스 툴 개발 중.
+              Mint 개발 (2022.04.15 ~ )
+              <br />
+              프로젝트 주제 선정부터 시작하여, 체험 부스 공개
+              이후인 10월 중순까지 주도적으로 프로젝트
+              리드. 1월 사내 공개 후, voc 대응하며 이미지와
+              json 데이터를 연동하는 인하우스 툴 개발 중.
             </p>
           </div>
         </div>
@@ -45,7 +46,7 @@ export default function CareerEducation() {
         </div>
       </div>
     </StyledWrapper>
-  )
+  );
 }
 
 const StyledWrapper = styled.section`
