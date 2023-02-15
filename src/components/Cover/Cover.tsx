@@ -20,7 +20,7 @@ export default function Cover() {
             </p>
           </div>
         </div>
-        <div aria-label="profile_image" id="profile_image" />
+        <div id="profile_image" />
       </div>
     </StyledWrapper>
   );
