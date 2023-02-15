@@ -17,7 +17,7 @@ export default function Stack(props: Record<string, string>) {
         <Image src="/icons/icon_html.png" alt="html icon" width={64} height={64} />
       </span>
       <div className="section__content">
-        <h5>{titles.get(type)}</h5>
+        <h4>{titles.get(type)}</h4>
         <p>
           {contents(type)}
         </p>
@@ -139,7 +139,7 @@ const StyledWrapper = styled.div`
   div.section__content{
     width: 100%;
 
-    h5{
+    h4{
       margin: 0;
       font-size: 1.25rem;
       font-weight: 700;

@@ -11,7 +11,7 @@ export default function Cover() {
             <div className="section__container-name-bar" />
           </div>
           <div className="section__container-info">
-            <h4>FRONT-END DEVELOPER</h4>
+            <h3>FRONT-END DEVELOPER</h3>
             <hr />
             <p>
               Email: jangmin.dev@gmail.com
@@ -20,7 +20,7 @@ export default function Cover() {
             </p>
           </div>
         </div>
-        <div id="profile_image" />
+        <div aria-label="profile_image" id="profile_image" />
       </div>
     </StyledWrapper>
   );
@@ -69,7 +69,7 @@ const StyledWrapper = styled.section`
       div.section__container-info{
         padding: 30px 40px 30px 0;
 
-        h4{
+        h3{
           margin: 18px 0 0;
           font-size: 1.25rem;
           letter-spacing: 2px;

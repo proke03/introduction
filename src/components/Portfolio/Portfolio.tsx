@@ -26,7 +26,7 @@ export default function Portfolio() {
   return (
     <StyledWrapper>
       <div className="section__container-button">
-        <button type="button" onClick={() => { moveSlide(-1); }}>
+        <button aria-label="button previous portfolio" type="button" onClick={() => { moveSlide(-1); }}>
           <svg viewBox="0 0 477.175 477.175">
             <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z" />
           </svg>
@@ -38,11 +38,11 @@ export default function Portfolio() {
           <div className="section__carousel-flexbox" style={style}>
             <div className="section__carousel-item">
               <div className="section__carousel-item-left">
-                <Image src="/mint.webp" alt="mint icon" width={150} height={150} />
+                <Image src="/mint.webp" alt="icon portfolio mint" width={150} height={150} />
               </div>
               <div className="section__carousel-item-right">
                 <h4>Mint</h4>
-                <h6>게더타운, zep을 모티브로 한 2D 협업 메타버스 서비스</h6>
+                <h5>게더타운, zep을 모티브로 한 2D 협업 메타버스 서비스</h5>
                 <p>
                   ㆍ2023년 1월 6일 사내 오픈
                   <br />
@@ -69,11 +69,11 @@ export default function Portfolio() {
             </div>
             <div className="section__carousel-item">
               <div className="section__carousel-item-left">
-                <Image src="/starsound.webp" alt="starsound icon" width={150} height={150} />
+                <Image src="/starsound.webp" alt="icon portfolio starsound" width={150} height={150} />
               </div>
               <div className="section__carousel-item-right">
                 <h4>별별소리</h4>
-                <h6>관심사 기반 커뮤니티 서비스</h6>
+                <h5>관심사 기반 커뮤니티 서비스</h5>
                 <p>
                   ㆍ2022년 12월 5일 오픈
                   <br />
@@ -98,7 +98,7 @@ export default function Portfolio() {
         </div>
       </div>
       <div className="section__container-button">
-        <button type="button" onClick={() => { moveSlide(1); }}>
+        <button aria-label="button  portfolio" type="button" onClick={() => { moveSlide(1); }}>
           <svg transform="scale(-1, 1)" viewBox="0 0 477.175 477.175">
             <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z" />
           </svg>
@@ -177,7 +177,7 @@ const StyledWrapper = styled.section`
               line-height: 1.2;
             }
     
-            h6{
+            h5{
               margin: 0;
               font-size: 1.25rem;
               font-weight: 400;
