@@ -38,7 +38,7 @@ export default function Portfolio() {
           <div className="section__carousel-flexbox" style={style}>
             <div className="section__carousel-item">
               <div className="section__carousel-item-left">
-                <Image src="/mint.webp" alt="mint icon" width={150} height={150} />
+                <Image src="/mint.webp" alt="icon portfolio mint" width={150} height={150} />
               </div>
               <div className="section__carousel-item-right">
                 <h4>Mint</h4>
@@ -69,7 +69,7 @@ export default function Portfolio() {
             </div>
             <div className="section__carousel-item">
               <div className="section__carousel-item-left">
-                <Image src="/starsound.webp" alt="starsound icon" width={150} height={150} />
+                <Image src="/starsound.webp" alt="icon portfolio starsound" width={150} height={150} />
               </div>
               <div className="section__carousel-item-right">
                 <h4>별별소리</h4>
