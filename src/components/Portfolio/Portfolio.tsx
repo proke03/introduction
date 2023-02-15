@@ -69,7 +69,7 @@ export default function Portfolio() {
             </div>
             <div className="section__carousel-item">
               <div className="section__carousel-item-left">
-                <Image src="/starsound.png" alt="starsound icon" width={150} height={150} />
+                <Image src="/starsound.webp" alt="starsound icon" width={150} height={150} />
               </div>
               <div className="section__carousel-item-right">
                 <h4>별별소리</h4>

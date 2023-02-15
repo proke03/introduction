@@ -92,7 +92,7 @@ const StyledWrapper = styled.section`
 
     div#profile_image{
       min-height: 785px;
-      background-image: url("/profile.jpg");
+      background-image: url("/profile.webp");
       background-size: cover;
       background-position: 50% 50%;
     }
