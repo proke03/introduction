@@ -13,7 +13,9 @@ export default function Stack(props: Record<string, string>) {
 
   return (
     <StyledWrapper ref={ref}>
-      <Image src="/icons/icon_html.png" alt="html icon" width={64} height={64} />
+      <span className="section__icon-wrapper">
+        <Image src="/icons/icon_html.png" alt="html icon" width={64} height={64} />
+      </span>
       <div className="section__content">
         <h5>{titles.get(type)}</h5>
         <p>
@@ -128,7 +130,7 @@ const StyledWrapper = styled.div`
   flex-direction: row;
   padding: 30px;
 
-  img{
+  span.section__icon-wrapper{
     margin-right: 30px;
     width: 64px;
     height: 64px;
