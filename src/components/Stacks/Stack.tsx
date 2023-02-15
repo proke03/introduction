@@ -1,9 +1,17 @@
+import { useRef } from "react";
 import styled from "@emotion/styled";
+import { useOnScroll } from "@/hooks";
 
 export default function Stack(props: Record<string, string>){
   const { type } = props;
+  const ref = useRef(null);
+  useOnScroll({
+    ref, 
+    animationName: (type==='html' || type=== 'framework') ? 'slide_ltr' : 'slide_rtl'
+  });
+
   return(
-    <StyledWrapper>
+    <StyledWrapper ref={ref}>
       <img src="icons/icon_html.png" alt="html icon" />
       <div className="section__content">
         <h5>{titles.get(type)}</h5>
@@ -63,6 +71,7 @@ const contents = (type: string) => {
 }
 
 const StyledWrapper = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
   padding: 30px;
@@ -82,9 +91,11 @@ const StyledWrapper = styled.div`
       font-weight: 700;
     }
 
-    span{
-      font-size: 1rem;
-      font-weight: 700;
+    p{
+      span{
+        font-size: 1rem;
+        font-weight: 700;
+      }
     }
   }
 `
