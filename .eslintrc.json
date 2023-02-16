@@ -8,6 +8,7 @@
     "import/extensions": "off",
     "react/jsx-props-no-spreading": "off",
     "consistent-return": "off",
-    "default-case": "off"
+    "default-case": "off",
+    "import/prefer-default-export": "off"
   }
 }
