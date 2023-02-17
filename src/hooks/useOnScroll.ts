@@ -1,19 +1,19 @@
-import { useEffect, useCallback } from 'react';
+import { useEffect, useCallback, RefObject } from 'react';
 
 interface Props {
-  ref : React.RefObject<HTMLElement>;
+  ref : RefObject<HTMLElement>;
   animationName: string;
 }
 /**
  * @description use animation on scroll
  * @param props -{ref, animationName}
- * @returns 
+ * @returns
  */
 export function useOnScroll(props: Props) {
   const { ref, animationName } = props;
 
   const callback = useCallback(() => {
-    if(!ref.current) return;
+    if (!ref.current) return;
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
