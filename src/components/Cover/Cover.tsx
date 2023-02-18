@@ -28,10 +28,8 @@ export default function Cover() {
 
 const StyledWrapper = styled.section`
   margin-bottom: 72px;
-  height: 785px;
   display: flex;
   flex-direction: row;
-  display: flex;
   justify-content: center;
 
   div.section__content{
@@ -41,20 +39,36 @@ const StyledWrapper = styled.section`
     display: grid;
     grid-template-columns: 50% 50%;
 
+    @media (max-width: 767px) {
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+    }
+
     div.section__container{
       div.section__container-name{
-        padding: 30px 40px 30px 0;
-
         div.section__container-name-bar{
           display: block;
           width: 456px;
           height: 20px;
           background-color: #f1c50e;
+
+          @media (max-width: 1199px) {
+            width: 80%;
+          }
+
+          @media (max-width: 767px) {
+            margin: 0 auto;
+          }
         }
 
         h2{
           margin: 18px 0;
           font-size: 3.75rem;
+
+          @media (max-width: 767px) {
+            text-align: center;
+          }
         }
       }
 
@@ -74,27 +88,51 @@ const StyledWrapper = styled.section`
           font-size: 1.25rem;
           letter-spacing: 2px;
           font-weight: 700;
+
+          @media (max-width: 767px) {
+            text-align: center;
+          }
         }
 
         hr{
           margin: 23px auto 0 0;
           width: 489px;
           border: 1px solid black;
+
+          @media (max-width: 1199px) {
+            max-width: 90%;
+          }
+
+          @media (max-width: 767px) {
+            margin: 23px auto;
+            width: 330px;
+          }
         }
 
         p{
           margin: 20px 0 0;
           font-size: 1rem;
           line-height: 1.6;
+
+          @media (max-width: 767px) {
+            margin: 23px auto;
+            width: 330px;
+            text-align: center;
+          }
         }
       }
     }
 
     div#profile_image{
+      max-width: 570px;
       min-height: 785px;
       background-image: url("/profile.webp");
       background-size: cover;
       background-position: 50% 50%;
+
+      @media (max-width: 991px) {
+        width: 100%;
+      }
     }
   }
 `;
