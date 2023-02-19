@@ -133,6 +133,10 @@ const StyledWrapper = styled.section`
       @media (max-width: 991px) {
         width: 100%;
       }
+
+      @media (max-width: 767px) {
+        align-self: center;
+      }
     }
   }
 `;
