@@ -26,6 +26,46 @@ export default function Stack(props: Record<string, string>) {
   );
 }
 
+const StyledWrapper = styled.div`
+  max-width: 565px;
+  min-width: 535px;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+
+  @media (max-width: 1199px) {
+    padding: 0;
+  }
+
+  @media (max-width: 1085px) {
+    margin-bottom: 20px;
+  }
+
+  span.section__icon-wrapper{
+    margin-right: 30px;
+    width: 64px;
+    height: 64px;
+  }
+
+  div.section__content{
+    width: calc(100% - 124px);
+    word-break: keep-all;
+
+    h4{
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    p{
+      span{
+        font-size: 1rem;
+        font-weight: 700;
+      }
+    }
+  }
+`;
+
 const titles = new Map();
 titles.set('html', 'HTML/CSS');
 titles.set('javascript', 'JAVASCRIPT');
@@ -123,43 +163,3 @@ const contents = (type: string) => {
       );
   }
 };
-
-const StyledWrapper = styled.div`
-  max-width: 565px;
-  min-width: 535px;
-  display: flex;
-  flex-direction: row;
-  padding: 30px;
-
-  @media (max-width: 1199px) {
-    padding: 0;
-  }
-
-  @media (max-width: 1085px) {
-    margin-bottom: 20px;
-  }
-
-  span.section__icon-wrapper{
-    margin-right: 30px;
-    width: 64px;
-    height: 64px;
-  }
-
-  div.section__content{
-    width: calc(100% - 124px);
-    word-break: keep-all;
-
-    h4{
-      margin: 0;
-      font-size: 1.25rem;
-      font-weight: 700;
-    }
-
-    p{
-      span{
-        font-size: 1rem;
-        font-weight: 700;
-      }
-    }
-  }
-`;
