@@ -23,22 +23,25 @@ export default function Stacks() {
 }
 
 const StyledWrapper = styled.section`
-  height: 854px;
   display: flex;
   flex-direction: column;
 
   div.section__container{
     margin: 0 auto 60px auto;
-    width: 1140px;
+    max-width: 1140px;
     display: flex;
     flex-direction: column;
-    
+
     h3{
       margin-top: 90px;
       font-size: 2.25rem;
       font-weight: 700;
       text-align: center;
       vertical-align: middle;
+
+      @media (max-width: 1085px) {
+        margin-top: 30px;
+      }
     }
   
     div.section__contents{
@@ -47,6 +50,12 @@ const StyledWrapper = styled.section`
       display: grid;
       grid-template-columns: repeat(2, calc(50% - 5px));
       grid-gap: 10px;
+
+      @media (max-width: 1085px) {
+        margin: 42px 0 58px;
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 

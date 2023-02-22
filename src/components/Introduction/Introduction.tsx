@@ -19,16 +19,16 @@ export default function Introduction() {
         <div className="section__contents" ref={contentsRef}>
           <p className="section__content">
             <span>꾸준히 성장하기 위해 노력</span>
-            합니다. 이를 위해,
-            <br />
+            합니다.
+            이를 위해,&nbsp;
             1일 1커밋을 실천하고 있습니다.
             {' '}
             <span>데이터 시각화</span>
             에
             관심이 많아서 리액트 차트 라이브러리 &nbsp;
             <span>recharts의 Collaborator</span>
-            로 활동하고 있습니다.
-            다양한 오픈소스의 관련 이슈에 기여하며
+            로 활동하고 있습니다.&nbsp;
+            다양한 오픈소스의 관련 이슈에 기여하며&nbsp;
             <span>웹 접근성</span>
             과
             <span>테스트 코드</span>
@@ -93,12 +93,31 @@ const StyledWrapper = styled.section`
       display: grid;
       grid-template-columns: repeat(3, calc(33.3333% - 6.66667px));
       grid-gap: 10px;
+
+      @media (max-width: 1199px) {
+        width: 767px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (max-width: 767px) {
+        width: 52%;
+      }
   
       p.section__content{
-        padding: 30px 30px 30px 0;
+        padding: 30px 22px 30px 0;
+
+        @media (max-width: 1199px) {
+          /* font-size: 1.5rem; */
+        }
+
         span{
           font-size: 1rem;
           font-weight: 700;
+
+          @media (max-width: 1199px) {
+            /* font-size: 1.5rem; */
+          }
         }
       }
     }
