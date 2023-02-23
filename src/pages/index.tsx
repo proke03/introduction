@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Header from '@/components/Header';
 import Cover from '@/components/Cover';
 import Introduction from '@/components/Introduction';
 import Stacks from '@/components/Stacks';
@@ -16,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <header />
+        <Header />
         <Cover />
         <Introduction />
         <Stacks />

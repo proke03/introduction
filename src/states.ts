@@ -1,6 +1,5 @@
 import { atom } from 'recoil';
-
-type Theme = 'Light' | 'Dark';
+import { Theme } from './types';
 
 const themeState = atom({
   key: 'themeState',
