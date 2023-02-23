@@ -25,6 +25,7 @@ const StyledWrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  background-color: ${(props) => props.theme.colors.background};
 
   button {
     margin-right: 24px;
@@ -32,7 +33,7 @@ const StyledWrapper = styled.header`
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
-    background-color: #f1c50e;
+    background-color: ${(props) => props.theme.colors.primary};
     color: #fff;
   }
 `;

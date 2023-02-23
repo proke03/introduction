@@ -25,6 +25,8 @@ export default function Stacks() {
 const StyledWrapper = styled.section`
   display: flex;
   flex-direction: column;
+  color: ${(props) => props.theme.colors.text};
+  background-color: ${(props) => props.theme.colors.background};
 
   div.section__container{
     margin: 0 auto 60px auto;

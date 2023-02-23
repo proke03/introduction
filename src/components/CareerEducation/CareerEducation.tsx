@@ -53,6 +53,8 @@ const StyledWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: ${(props) => props.theme.colors.text};
+  background-color: ${(props) => props.theme.colors.background};
 
   div.section__container{
     display: flex;

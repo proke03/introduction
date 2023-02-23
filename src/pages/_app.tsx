@@ -31,6 +31,7 @@ const lightTheme = {
   colors: {
     background: '#fff',
     text: '#000',
+    primary: '#f1c50e',
   },
 };
 
@@ -38,5 +39,6 @@ const darkTheme = {
   colors: {
     background: '#000',
     text: '#fff',
+    primary: '#f1c50e',
   },
 };

@@ -68,6 +68,8 @@ const StyledWrapper = styled.section`
   height: 854px;
   display: flex;
   flex-direction: column;
+  color: ${(props) => props.theme.colors.text};
+  background-color: ${(props) => props.theme.colors.background};
 
   div.section__container{
     margin: 207px auto 60px auto;
@@ -84,7 +86,7 @@ const StyledWrapper = styled.section`
         display: block;
         width: 464px;
         height: 20px;
-        background-color: #f1c50e;
+        background-color: ${(props) => props.theme.colors.primary};
       }
     }
   
@@ -107,17 +109,9 @@ const StyledWrapper = styled.section`
       p.section__content{
         padding: 30px 22px 30px 0;
 
-        @media (max-width: 1199px) {
-          /* font-size: 1.5rem; */
-        }
-
         span{
           font-size: 1rem;
           font-weight: 700;
-
-          @media (max-width: 1199px) {
-            /* font-size: 1.5rem; */
-          }
         }
       }
     }
