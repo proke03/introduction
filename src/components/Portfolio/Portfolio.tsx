@@ -109,12 +109,16 @@ export default function Portfolio() {
 }
 
 const StyledWrapper = styled.section`
-  height: 481px;
+  position: relative;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   background-color: #f1c50e;
 
   div.section__container-button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     align-items: center;
 
@@ -129,15 +133,24 @@ const StyledWrapper = styled.section`
     }
   }
 
+  div.section__container-button:first-child{
+    left: 0;
+  }
+
+  div.section__container-button:last-child{
+    right: 0;
+  }
+
   div.section__carousel{
-    margin: 0 auto 60px auto;
-    width: 1140px;
+    margin-bottom: 60px;
+    max-width: 1140px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     h3{
-      margin: 32px auto 0;
+      margin: 66px auto 0;
       font-size: 2.25rem;
       font-weight: 700;
       text-align: center;
@@ -145,30 +158,51 @@ const StyledWrapper = styled.section`
     }
 
     div.section__carousel-window{
-      width: 968px;
-      height: 374px;
+      width: calc(100% - 180px);
       overflow: hidden;
+
       div.section__carousel-flexbox{
+        width: 100%;
         display: flex;
         transition: all 0.3s ease-out;
+
         div.section__carousel-item{
-          margin: 24px auto 8px;
-          width: 968px;
-          height: 374px;
+          margin-top: 24px;
+          margin-bottom: 8px;
+          width: 100%;
           display: flex;
+
+          @media (max-width: 767px) {
+            margin-top: 0;
+            flex-direction: column;
+          }
     
           div.section__carousel-item-left{
+            padding-top: 30px;
             width: 198.13px;
-            padding: 30px;
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @media (max-width: 767px) {
+              width: 100%;
+              padding-top: 0px;
+            }
+
+            img{
+              min-width: 150px;
+            }
           }
     
           div.section__carousel-item-right{
             width: 679.86px;
             padding: 30px;
             color: white;
+            word-break: keep-all;
+
+            @media (max-width: 767px) {
+              width: calc(100vw - 255px);
+            }
     
             h4{
               margin: 0;
@@ -189,14 +223,16 @@ const StyledWrapper = styled.section`
               margin: 0;
               font-size: 1.25rem;
               line-height: 1.8;
+
+              @media (max-width: 767px) {
+                width: 100%;
+              }
             }
           }
         }
       }
     }
     
-
-  
     div.section__contents{
       margin: 23px 0 58px;
       height: 606px;
