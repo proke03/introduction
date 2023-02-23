@@ -50,17 +50,19 @@ export default function CareerEducation() {
 }
 
 const StyledWrapper = styled.section`
-  height: 495px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   div.section__container{
-    width: 940px;
-    height: 495px;
     display: flex;
     flex-direction: column;
     padding: 32px 0;
+    word-break: keep-all;
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
     
     h2{
       margin: 0 auto 0;
@@ -74,6 +76,11 @@ const StyledWrapper = styled.section`
       grid-template-columns: repeat(2, 50%);
       
       div.section__contents-left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 90px;
+
         h3{
           font-size: 1.875rem;
           line-height: 1.2;
@@ -88,10 +95,15 @@ const StyledWrapper = styled.section`
 
       div.section__contents-right{
         width: 100%;
-        padding: 0 39px 0 90px;
-        span{
-          font-size: 1rem;
-          font-weight: 700;
+        padding-left: 90px;
+
+        p{
+          width: calc(100% - 180px);
+
+          span{
+            font-size: 1rem;
+            font-weight: 700;
+          }
         }
       }
     }
