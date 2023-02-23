@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export default function CareerEducation() {
+export default function Footer() {
   return (
     <StyledWrapper>
       <p>감사합니다 :)</p>
@@ -14,7 +14,7 @@ const StyledWrapper = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: ${(props) => props.theme.colors.text};
   background-color: #333333;
 
   p{

@@ -113,7 +113,7 @@ const StyledWrapper = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #f1c50e;
+  background-color: ${(props) => props.theme.colors.primary};
 
   div.section__container-button{
     position: absolute;
@@ -197,7 +197,7 @@ const StyledWrapper = styled.section`
           div.section__carousel-item-right{
             width: 679.86px;
             padding: 30px;
-            color: white;
+            color: #fff;
             word-break: keep-all;
 
             @media (max-width: 767px) {

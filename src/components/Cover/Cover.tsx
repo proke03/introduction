@@ -27,13 +27,14 @@ export default function Cover() {
 }
 
 const StyledWrapper = styled.section`
-  margin-bottom: 72px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  color: ${(props) => props.theme.colors.text};
+  background-color: ${(props) => props.theme.colors.background};
 
   div.section__content{
-    margin: 0 auto;
+    margin: 0 auto 72px;
     width: 1140px;
     height: 100%;
     display: grid;
@@ -51,7 +52,7 @@ const StyledWrapper = styled.section`
           display: block;
           width: 456px;
           height: 20px;
-          background-color: #f1c50e;
+          background-color: ${(props) => props.theme.colors.primary};
 
           @media (max-width: 1199px) {
             width: 80%;
@@ -97,7 +98,7 @@ const StyledWrapper = styled.section`
         hr{
           margin: 23px auto 0 0;
           width: 489px;
-          border: 1px solid black;
+          border: 1px solid ${(props) => props.theme.colors.text};
 
           @media (max-width: 1199px) {
             max-width: 90%;
