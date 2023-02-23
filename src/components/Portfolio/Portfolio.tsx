@@ -161,10 +161,6 @@ const StyledWrapper = styled.section`
       width: calc(100% - 180px);
       overflow: hidden;
 
-      @media (max-width: 1067px) {
-
-      }
-
       div.section__carousel-flexbox{
         width: 100%;
         display: flex;
@@ -202,6 +198,11 @@ const StyledWrapper = styled.section`
             width: 679.86px;
             padding: 30px;
             color: white;
+            word-break: keep-all;
+
+            @media (max-width: 767px) {
+              width: calc(100vw - 255px);
+            }
     
             h4{
               margin: 0;
@@ -222,14 +223,16 @@ const StyledWrapper = styled.section`
               margin: 0;
               font-size: 1.25rem;
               line-height: 1.8;
+
+              @media (max-width: 767px) {
+                width: 100%;
+              }
             }
           }
         }
       }
     }
     
-
-  
     div.section__contents{
       margin: 23px 0 58px;
       height: 606px;
