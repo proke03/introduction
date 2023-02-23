@@ -6,9 +6,10 @@
     "no-use-before-define": "off",
     "no-restricted-exports": "off",
     "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
     "react/jsx-props-no-spreading": "off",
     "consistent-return": "off",
-    "default-case": "off",
-    "import/prefer-default-export": "off"
+    "default-case": "off"
   }
 }
