@@ -26,17 +26,12 @@ export default function Stack(props: Record<string, string>) {
 }
 
 const StyledWrapper = styled.div`
-  max-width: 565px;
   display: flex;
   flex-direction: row;
   padding: 30px;
 
-  @media (max-width: 1199px) {
+  @media (max-width: 767px) {
     padding: 0;
-  }
-
-  @media (max-width: 1085px) {
-    margin-bottom: 20px;
   }
 
   span.section__icon-wrapper{
@@ -54,7 +49,7 @@ const StyledWrapper = styled.div`
     }
 
     h4{
-      margin: 0;
+      margin-bottom: 23px;
       font-size: 1.25rem;
       font-weight: 700;
     }
