@@ -4,16 +4,16 @@ import { useOnScroll } from '@/hooks';
 
 export default function CareerEducation() {
   const careerTitleRef = useRef(null);
-  useOnScroll({ ref: careerTitleRef, animationName: 'fade' });
+  useOnScroll({ ref: careerTitleRef });
   const careerLeftRef = useRef(null);
-  useOnScroll({ ref: careerLeftRef, animationName: 'fade' });
+  useOnScroll({ ref: careerLeftRef });
   const careerRightRef = useRef(null);
-  useOnScroll({ ref: careerRightRef, animationName: 'fade' });
+  useOnScroll({ ref: careerRightRef });
 
   const educationTitleRef = useRef(null);
-  useOnScroll({ ref: educationTitleRef, animationName: 'fade' });
+  useOnScroll({ ref: educationTitleRef });
   const educationLeftRef = useRef(null);
-  useOnScroll({ ref: educationLeftRef, animationName: 'fade' });
+  useOnScroll({ ref: educationLeftRef });
 
   return (
     <StyledWrapper>

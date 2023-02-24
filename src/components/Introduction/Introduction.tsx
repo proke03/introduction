@@ -4,10 +4,10 @@ import { useOnScroll } from '@/hooks';
 
 export default function Introduction() {
   const titleRef = useRef(null);
-  useOnScroll({ ref: titleRef, animationName: 'fade' });
+  useOnScroll({ ref: titleRef });
 
   const contentsRef = useRef(null);
-  useOnScroll({ ref: contentsRef, animationName: 'fade' });
+  useOnScroll({ ref: contentsRef });
 
   return (
     <StyledWrapper>

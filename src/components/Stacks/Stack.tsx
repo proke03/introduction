@@ -8,7 +8,6 @@ export default function Stack(props: Record<string, string>) {
   const ref = useRef(null);
   useOnScroll({
     ref,
-    animationName: 'fade',
   });
 
   return (
