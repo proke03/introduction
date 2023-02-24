@@ -6,14 +6,14 @@ export default function CareerEducation() {
   const careerTitleRef = useRef(null);
   useOnScroll({ ref: careerTitleRef, animationName: 'fade' });
   const careerLeftRef = useRef(null);
-  useOnScroll({ ref: careerLeftRef, animationName: 'slide_ltr' });
+  useOnScroll({ ref: careerLeftRef, animationName: 'fade' });
   const careerRightRef = useRef(null);
-  useOnScroll({ ref: careerRightRef, animationName: 'slide_rtl' });
+  useOnScroll({ ref: careerRightRef, animationName: 'fade' });
 
   const educationTitleRef = useRef(null);
   useOnScroll({ ref: educationTitleRef, animationName: 'fade' });
   const educationLeftRef = useRef(null);
-  useOnScroll({ ref: educationLeftRef, animationName: 'slide_ltr' });
+  useOnScroll({ ref: educationLeftRef, animationName: 'fade' });
 
   return (
     <StyledWrapper>

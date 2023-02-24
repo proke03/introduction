@@ -8,7 +8,7 @@ export default function Stack(props: Record<string, string>) {
   const ref = useRef(null);
   useOnScroll({
     ref,
-    animationName: (type === 'html' || type === 'framework') ? 'slide_ltr' : 'slide_rtl',
+    animationName: 'fade',
   });
 
   return (
@@ -28,7 +28,6 @@ export default function Stack(props: Record<string, string>) {
 
 const StyledWrapper = styled.div`
   max-width: 565px;
-  min-width: 535px;
   display: flex;
   flex-direction: row;
   padding: 30px;
@@ -51,6 +50,10 @@ const StyledWrapper = styled.div`
     width: calc(100% - 124px);
     word-break: keep-all;
 
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+
     h4{
       margin: 0;
       font-size: 1.25rem;
@@ -58,6 +61,7 @@ const StyledWrapper = styled.div`
     }
 
     p{
+      width: 100%;
       span{
         font-size: 1rem;
         font-weight: 700;

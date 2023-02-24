@@ -4,7 +4,7 @@ import { useOnScroll } from '@/hooks';
 
 export default function Introduction() {
   const titleRef = useRef(null);
-  useOnScroll({ ref: titleRef, animationName: 'slide_ltr' });
+  useOnScroll({ ref: titleRef, animationName: 'fade' });
 
   const contentsRef = useRef(null);
   useOnScroll({ ref: contentsRef, animationName: 'fade' });
