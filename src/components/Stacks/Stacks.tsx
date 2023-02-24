@@ -5,7 +5,7 @@ import Stack from './Stack';
 
 export default function Stacks() {
   const ref = useRef(null);
-  useOnScroll({ ref, animationName: 'fade' });
+  useOnScroll({ ref });
 
   return (
     <StyledWrapper>
@@ -23,10 +23,28 @@ export default function Stacks() {
 }
 
 const StyledWrapper = styled.section`
+  margin: 0 auto;
+  width: 1140px;
   display: flex;
   flex-direction: column;
   color: ${(props) => props.theme.colors.text};
   background-color: ${(props) => props.theme.colors.background};
+
+  @media (max-width: 1199px) {
+    width: 940px;
+  }
+
+  @media (max-width: 991px) {
+    width: 720px;
+  }
+
+  @media (max-width: 767px) {
+    width: 540px;
+  }
+
+  @media (max-width: 575px) {
+    width: 340px;
+  }
 
   div.section__container{
     margin: 0 auto 60px auto;
@@ -48,7 +66,6 @@ const StyledWrapper = styled.section`
   
     div.section__contents{
       margin: 23px 0 58px;
-      height: 606px;
       display: grid;
       grid-template-columns: repeat(2, calc(50% - 5px));
       grid-gap: 10px;
