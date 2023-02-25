@@ -209,7 +209,6 @@ const StyledWrapper = styled.section`
             }
     
             h4{
-              margin: 0;
               font-size: 2.25rem;
               font-weight: 700;
               line-height: 1.2;
@@ -220,7 +219,7 @@ const StyledWrapper = styled.section`
             }
     
             h5{
-              margin: 0;
+              margin-top: 6px;
               font-size: 1.25rem;
               font-weight: 400;
               letter-spacing: 2px;

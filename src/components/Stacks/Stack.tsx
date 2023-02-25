@@ -49,7 +49,7 @@ const StyledWrapper = styled.div`
     }
 
     h4{
-      margin-bottom: 23px;
+      margin-bottom: 12px;
       font-size: 1.25rem;
       font-weight: 700;
     }

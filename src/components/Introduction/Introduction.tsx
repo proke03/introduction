@@ -56,7 +56,20 @@ export default function Introduction() {
             가 되어 상반기 출시를 앞두고 있습니다.
           </p>
           <p className="section__content">
-            효율적인 의사소통을 위해서 늘 고민합니다.
+            효율적인 협업을 위해서 늘 고민합니다.
+            {' '}
+            <span>애자일을 </span>
+            <span>제안</span>
+            하고 먼저 적극적으로 소통하여 개발팀과&nbsp;
+            PM팀 간의
+            {' '}
+            <span>사일로(silo) 문제를 해결</span>
+            했습니다.&nbsp;
+            또한 팀 내 효율적인 지식 공유를 위해
+            {' '}
+            <span>페어 </span>
+            <span>프로그래밍</span>
+            을 진행했습니다.
           </p>
         </div>
       </div>

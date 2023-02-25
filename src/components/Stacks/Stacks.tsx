@@ -75,7 +75,7 @@ const StyledWrapper = styled.section`
       @media (max-width: 991px) {
         width: 720px;
         grid-template-columns: repeat(1, 100%);
-        //align items center
+        grid-gap: 20px;
       }
 
       @media (max-width: 767px) {
