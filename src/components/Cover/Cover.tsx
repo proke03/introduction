@@ -26,46 +26,39 @@ export default function Cover() {
   );
 }
 
-const StyledWrapper = styled.section`
-  margin: 0 auto;
-  width: 1140px;
-  height: 785px;
+const StyledWrapper = styled.section` 
   display: flex;
   flex-direction: row;
   justify-content: center;
   color: ${(props) => props.theme.colors.text};
   background-color: ${(props) => props.theme.colors.background};
 
-  @media (max-width: 1199px) {
-    width: 940px;
-    height: 666.19px;
-  }
-
-  @media (max-width: 991px) {
-    width: 720px;
-    height: 554.19px;
-  }
-
-  @media (max-width: 767px) {
-    width: 540px;
-    height: fit-content;
-  }
-
-  @media (max-width: 575px) {
-    width: 340px;
-  }
-
   div.section__content{
     margin: 0 auto 72px;
-    width: 100%;
-    height: 100%;
+    width: 1140px;
+    height: 785px;
     display: flex;
     flex-direction: row;
 
+    @media (max-width: 1199px) {
+      width: 940px;
+      height: 666.19px;
+    }
+
+    @media (max-width: 991px) {
+      width: 720px;
+      height: 554.19px;
+    }
+
     @media (max-width: 767px) {
+      width: 540px;
       height: fit-content;
       display: flex;
       flex-direction: column;
+    }
+
+    @media (max-width: 575px) {
+      width: 340px;
     }
 
     div.section__container{

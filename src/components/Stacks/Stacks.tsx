@@ -23,34 +23,32 @@ export default function Stacks() {
 }
 
 const StyledWrapper = styled.section`
-  margin: 0 auto;
-  width: 1140px;
   display: flex;
   flex-direction: column;
   color: ${(props) => props.theme.colors.text};
   background-color: ${(props) => props.theme.colors.background};
 
-  @media (max-width: 1199px) {
-    width: 940px;
-  }
-
-  @media (max-width: 991px) {
-    width: 720px;
-  }
-
-  @media (max-width: 767px) {
-    width: 540px;
-  }
-
-  @media (max-width: 575px) {
-    width: 340px;
-  }
-
   div.section__container{
     margin: 0 auto 60px auto;
-    max-width: 1140px;
+    width: 1140px;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 1199px) {
+      width: 940px;
+    }
+
+    @media (max-width: 991px) {
+      width: 720px;
+    }
+
+    @media (max-width: 767px) {
+      width: 540px;
+    }
+
+    @media (max-width: 575px) {
+      width: 340px;
+    }
 
     h3{
       margin-top: 90px;

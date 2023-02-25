@@ -65,32 +65,31 @@ export default function Introduction() {
 }
 
 const StyledWrapper = styled.section`
-  margin: 0 auto;
-  width: 1140px;
   display: flex;
   flex-direction: column;
   color: ${(props) => props.theme.colors.text};
   background-color: ${(props) => props.theme.colors.background};
-
-  @media (max-width: 1199px) {
-    width: 940px;
-  }
-
-  @media (max-width: 991px) {
-    width: 720px;
-  }
-
-  @media (max-width: 767px) {
-    width: 540px;
-  }
-
-  @media (max-width: 575px) {
-    width: 340px;
-  }
   
   div.section__container{
-    margin-top: 207px;
+    margin: 207px auto 0 auto;
+    width: 1140px;
     
+    @media (max-width: 1199px) {
+      width: 940px;
+    }
+
+    @media (max-width: 991px) {
+      width: 720px;
+    }
+
+    @media (max-width: 767px) {
+      width: 540px;
+    }
+
+    @media (max-width: 575px) {
+      width: 340px;
+    }
+
     div.section__title{
       h2{
         font-size: 2.25rem;
