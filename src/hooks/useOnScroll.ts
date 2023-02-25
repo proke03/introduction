@@ -2,15 +2,14 @@ import { useEffect, useCallback, RefObject } from 'react';
 
 interface Props {
   ref : RefObject<HTMLElement>;
-  animationName: string;
 }
 /**
  * @description use animation on scroll
- * @param props -{ref, animationName}
+ * @param props -{ref}
  * @returns
  */
 export function useOnScroll(props: Props) {
-  const { ref, animationName } = props;
+  const { ref } = props;
 
   const callback = useCallback(() => {
     if (!ref.current) return;
@@ -18,11 +17,11 @@ export function useOnScroll(props: Props) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add(`${animationName}-in`);
-          entry.target.classList.remove(`${animationName}-out`);
+          entry.target.classList.add('fade-in');
+          entry.target.classList.remove('fade-out');
         } else {
-          entry.target.classList.remove(`${animationName}-in`);
-          entry.target.classList.add(`${animationName}-out`);
+          entry.target.classList.remove('fade-in');
+          entry.target.classList.add('fade-out');
         }
       });
     });

@@ -43,6 +43,7 @@ nav, output, ruby, section, summary, time, mark, audio, video
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+  word-break: keep-all;
 }
 
 main {
@@ -54,30 +55,6 @@ main {
   background-color: white;
 }
 
-.slide_ltr-in {
-  margin-left: 0;
-  opacity: 1;
-  transition: ease-in-out 0.55s;
-}
-
-.slide_ltr-out {
-  margin-left: -100%;
-  opacity: 0;
-  transition: ease-in-out 0.55s;
-}
-
-.slide_rtl-in {
-  margin-left: 0;
-  opacity: 1;
-  transition: ease-in-out 0.55s;
-}
-
-.slide_rtl-out {
-  margin-left: 100%;
-  opacity: 0;
-  transition: ease-in-out 0.55s;
-}
-
 .fade-in {
   opacity: 1;
   transition: ease-in-out 0.55s;
@@ -85,15 +62,5 @@ main {
 
 .fade-out {
   opacity: 0;
-  transition: ease-in-out 0.55s;
-}
-
-.scaleup-in {
-  transform: scale(1);
-  transition: ease-in-out 0.55s;
-}
-
-.scaleup-out {
-  transform: scale(0);
   transition: ease-in-out 0.55s;
 }

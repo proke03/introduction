@@ -8,7 +8,6 @@ export default function Stack(props: Record<string, string>) {
   const ref = useRef(null);
   useOnScroll({
     ref,
-    animationName: (type === 'html' || type === 'framework') ? 'slide_ltr' : 'slide_rtl',
   });
 
   return (
@@ -27,18 +26,12 @@ export default function Stack(props: Record<string, string>) {
 }
 
 const StyledWrapper = styled.div`
-  max-width: 565px;
-  min-width: 535px;
   display: flex;
   flex-direction: row;
   padding: 30px;
 
-  @media (max-width: 1199px) {
+  @media (max-width: 767px) {
     padding: 0;
-  }
-
-  @media (max-width: 1085px) {
-    margin-bottom: 20px;
   }
 
   span.section__icon-wrapper{
@@ -51,13 +44,18 @@ const StyledWrapper = styled.div`
     width: calc(100% - 124px);
     word-break: keep-all;
 
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+
     h4{
-      margin: 0;
+      margin-bottom: 23px;
       font-size: 1.25rem;
       font-weight: 700;
     }
 
     p{
+      width: 100%;
       span{
         font-size: 1rem;
         font-weight: 700;

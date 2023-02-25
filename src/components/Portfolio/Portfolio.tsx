@@ -161,6 +161,10 @@ const StyledWrapper = styled.section`
       width: calc(100% - 180px);
       overflow: hidden;
 
+      @media (max-width: 767px) {
+        width: calc(100% - 72px);
+      }
+
       div.section__carousel-flexbox{
         width: 100%;
         display: flex;
@@ -201,7 +205,7 @@ const StyledWrapper = styled.section`
             word-break: keep-all;
 
             @media (max-width: 767px) {
-              width: calc(100vw - 255px);
+              width: calc(100vw - 145px);
             }
     
             h4{
@@ -209,6 +213,10 @@ const StyledWrapper = styled.section`
               font-size: 2.25rem;
               font-weight: 700;
               line-height: 1.2;
+
+              @media (max-width: 767px) {
+                font-size: 2rem;
+              }
             }
     
             h5{
@@ -217,6 +225,10 @@ const StyledWrapper = styled.section`
               font-weight: 400;
               letter-spacing: 2px;
               line-height: 1.2;
+
+              @media (max-width: 767px) {
+                font-size: 1.125rem;
+              }
             }
     
             p{
@@ -225,7 +237,7 @@ const StyledWrapper = styled.section`
               line-height: 1.8;
 
               @media (max-width: 767px) {
-                width: 100%;
+                font-size: 1rem;
               }
             }
           }
