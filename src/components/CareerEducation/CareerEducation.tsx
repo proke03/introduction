@@ -57,13 +57,27 @@ const StyledWrapper = styled.section`
   background-color: ${(props) => props.theme.colors.background};
 
   div.section__container{
+    margin: 0 auto;
+    width: 1140px;
     display: flex;
     flex-direction: column;
     padding: 32px 0;
     word-break: keep-all;
 
+    @media (max-width: 1199px) {
+      width: 940px;
+    }
+
     @media (max-width: 991px) {
-      width: 100%;
+      width: 720px;
+    }
+
+    @media (max-width: 767px) {
+      width: 540px;
+    }
+
+    @media (max-width: 575px) {
+      width: 340px;
     }
     
     h2{
@@ -83,6 +97,10 @@ const StyledWrapper = styled.section`
         align-items: flex-start;
         padding-left: 90px;
 
+        @media (max-width: 767px) {
+          padding-left: 0;
+        }
+
         h3{
           font-size: 1.875rem;
           line-height: 1.2;
@@ -99,8 +117,20 @@ const StyledWrapper = styled.section`
         width: 100%;
         padding-left: 90px;
 
+        @media (max-width: 767px) {
+          padding-left: 0;
+        }
+
         p{
           width: calc(100% - 180px);
+
+          @media (max-width: 991px) {
+            width: calc(100% - 90px);
+          }
+
+          @media (max-width: 767px) {
+            width: 100%;
+          }
 
           span{
             font-size: 1rem;

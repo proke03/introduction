@@ -14,7 +14,7 @@ const StyledWrapper = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: ${(props) => props.theme.colors.text};
+  color: #fff;
   background-color: #333333;
 
   p{
