@@ -16,7 +16,8 @@ export default function Home() {
         <meta name="author" content="장민" />
         <meta property="og:title" content="프론트엔드 개발자 장민" />
         <meta property="og:description" content="안녕하세요, 프론트엔드 개발자 장민입니다." />
-        <meta property="og:image" content="https://user-images.githubusercontent.com/19148682/221339578-7beeeffd-0392-4eb6-be28-9e8798b43b67.jpg?raw=1" />
+        <meta property="og:image" content="https://user-images.githubusercontent.com/19148682/221340391-62225fdd-606b-4212-a19a-1e7f026c3102.png" />
+        <meta property="og:type" content="website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
