@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="author" content="장민" />
         <meta property="og:title" content="프론트엔드 개발자 장민" />
         <meta property="og:description" content="안녕하세요, 프론트엔드 개발자 장민입니다." />
-        <meta property="og:image" content="https://drive.google.com/file/d/12InTUwOwMUaaQoe4tzLx9mEd3fjUyy8w/view?usp=sharing" />
+        <meta property="og:image" content="/profile.webp" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
