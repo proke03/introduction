@@ -142,7 +142,6 @@ const StyledWrapper = styled.section`
 
         p{
           font-size: 1rem;
-          font-weight: 600;
           line-height: 1.8;
         }
       }
