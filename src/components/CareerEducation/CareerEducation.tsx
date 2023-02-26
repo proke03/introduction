@@ -5,27 +5,27 @@ import { useOnScroll } from '@/hooks';
 export default function CareerEducation() {
   const careerTitleRef = useRef(null);
   useOnScroll({ ref: careerTitleRef });
-  const careerLeftRef = useRef(null);
-  useOnScroll({ ref: careerLeftRef });
-  const careerRightRef = useRef(null);
-  useOnScroll({ ref: careerRightRef });
+  const careerRef = useRef(null);
+  useOnScroll({ ref: careerRef });
 
   const educationTitleRef = useRef(null);
   useOnScroll({ ref: educationTitleRef });
-  const educationLeftRef = useRef(null);
-  useOnScroll({ ref: educationLeftRef });
+  const educationRef = useRef(null);
+  useOnScroll({ ref: educationRef });
+  const experienceRef = useRef(null);
+  useOnScroll({ ref: experienceRef });
 
   return (
     <StyledWrapper>
       <div className="section__container">
         <h2 ref={careerTitleRef}>Career</h2>
-        <div className="section__contents">
-          <div className="section__contents-left" ref={careerLeftRef}>
+        <div className="section__contents" ref={careerRef}>
+          <div className="section__contents-left">
             <h3>Tmax Metaverse</h3>
             <p>Tmax 그룹 계열사</p>
             <p>2022.03~</p>
           </div>
-          <div className="section__contents-right" ref={careerRightRef}>
+          <div className="section__contents-right">
             <p>
               <span>Mint 개발 (2022.04.15 ~ )</span>
               <br />
@@ -37,13 +37,13 @@ export default function CareerEducation() {
           </div>
         </div>
         <h2 ref={educationTitleRef}>Education & Experience</h2>
-        <div className="section__contents">
-          <div className="section__contents-left" ref={educationLeftRef}>
+        <div className="section__contents" ref={educationRef}>
+          <div className="section__contents-left">
             <h3>국민대학교</h3>
             <p>컴퓨터공학과</p>
             <p>2016.03~2021.02</p>
           </div>
-          <div className="section__contents-right" ref={careerRightRef}>
+          <div className="section__contents-right">
             <p>
               학부 시절, 게임 프로그래밍에 관심이 많아서
               프로젝트 중심 수업에서 게임 프로젝트를 진행했습니다.
@@ -64,13 +64,13 @@ export default function CareerEducation() {
             </p>
           </div>
         </div>
-        <div className="section__contents">
-          <div className="section__contents-left" ref={educationLeftRef}>
+        <div className="section__contents" ref={experienceRef}>
+          <div className="section__contents-left">
             <h3>이매지니어스</h3>
             <p>스타트업</p>
             <p>2019.03.19~2019.08.09</p>
           </div>
-          <div className="section__contents-right" ref={careerRightRef}>
+          <div className="section__contents-right">
             <p>
               재학 중 스타트업 합류 제안을 받아서 일했던 경험이 있습니다.
               <br />
