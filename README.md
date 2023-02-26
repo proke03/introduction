@@ -1,8 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 기술 이력서
 
-## Getting Started
-
-First, run the development server:
+### 사용 기술
+코어: TypeScript, React, Next.js  
+상태 관리: Recoil  
+스타일링: Emotion  
+&nbsp;
+### 구현 기능 및 적용 방법론
+- 웹 접근성 준수을 준수했습니다.
+- Semantic tag 사용하여 검색 엔진 최적화(SEO)를 했습니다.
+- BEM 방법론을 적용하여 클래스명을 일관성 있게 유지했습니다.
+- 반응형을 적용했습니다.
+- Light/Dark theme 전환 기능을 구현했습니다.
+- IntersectionObserver로 스크롤 애니메이션을 구현했습니다.
+- 커스텀 훅으로 코드 재사용성을 높였습니다.
+- Carousel을 직접 구현했습니다.  
+&nbsp;
+### 배포 주소
+[minjang.info](https://minjang.info)  
+&nbsp;
+### 실행 방법
 
 ```bash
 npm run dev
@@ -12,27 +28,4 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+브라우저에서 다음 주소를 입력하세요. [http://localhost:2345](http://localhost:2345)
