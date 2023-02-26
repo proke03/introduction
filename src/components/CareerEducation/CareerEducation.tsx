@@ -27,7 +27,7 @@ export default function CareerEducation() {
           </div>
           <div className="section__contents-right" ref={careerRightRef}>
             <p>
-              Mint 개발 (2022.04.15 ~ )
+              <span>Mint 개발 (2022.04.15 ~ )</span>
               <br />
               프로젝트 주제 선정부터 시작하여, 체험 부스 공개
               이후인 10월 중순까지 주도적으로 프로젝트
@@ -36,12 +36,46 @@ export default function CareerEducation() {
             </p>
           </div>
         </div>
-        <h2 ref={educationTitleRef}>Education</h2>
+        <h2 ref={educationTitleRef}>Education & Experience</h2>
         <div className="section__contents">
           <div className="section__contents-left" ref={educationLeftRef}>
             <h3>국민대학교</h3>
             <p>컴퓨터공학과</p>
             <p>2016.03~2021.02</p>
+          </div>
+          <div className="section__contents-right" ref={careerRightRef}>
+            <p>
+              학부 시절, 게임 프로그래밍에 관심이 많아서
+              프로젝트 중심 수업에서 게임 프로젝트를 진행했습니다.
+              <br />
+              <br />
+              <span>오픈소스 소프트웨어 A+</span>
+              <br />
+              현업 게임프로그래머인 교수님의 코드 리뷰 100% 반영
+              <br />
+              <br />
+              <span>게임 소프트웨어 A+</span>
+              <br />
+              수강생의 평가 70% 반영
+              <br />
+              <br />
+              <span>캡스톤 프로젝트(졸업 작품) A+</span>
+              <br />
+            </p>
+          </div>
+        </div>
+        <div className="section__contents">
+          <div className="section__contents-left" ref={educationLeftRef}>
+            <h3>이매지니어스</h3>
+            <p>스타트업</p>
+            <p>2019.03.19~2019.08.09</p>
+          </div>
+          <div className="section__contents-right" ref={careerRightRef}>
+            <p>
+              재학 중 스타트업 합류 제안을 받아서 일했던 경험이 있습니다.
+              <br />
+              유니티 게임 엔진으로 이미지 합성 애플리케이션의 신기능 개발 및 AR 애플리케이션 최적화를 진행했습니다.
+            </p>
           </div>
         </div>
       </div>
@@ -87,7 +121,7 @@ const StyledWrapper = styled.section`
     }
   
     div.section__contents{
-      margin: 32px 0 60px;
+      margin-top: 32px;
       display: grid;
       grid-template-columns: repeat(2, 50%);
       
@@ -138,6 +172,10 @@ const StyledWrapper = styled.section`
           }
         }
       }
+    }
+
+    div.section__contents:nth-of-type(odd){
+      margin-bottom: 32px;
     }
   }
 
