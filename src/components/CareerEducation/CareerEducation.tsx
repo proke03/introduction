@@ -68,7 +68,7 @@ export default function CareerEducation() {
           <div className="section__contents-left">
             <h3>이매지니어스</h3>
             <p>스타트업</p>
-            <p>2019.03.19~2019.08.09</p>
+            <p>2019.03~2019.08</p>
           </div>
           <div className="section__contents-right">
             <p>
