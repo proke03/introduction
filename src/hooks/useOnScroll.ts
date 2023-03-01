@@ -13,7 +13,6 @@ export function useOnScroll(props: Props) {
 
   const callback = useCallback(() => {
     if (!ref.current) return;
-
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -27,11 +26,11 @@ export function useOnScroll(props: Props) {
     });
 
     observer.observe(ref.current);
-  }, [ref.current]);
+  }, [ref]);
 
   useEffect(() => {
     callback();
-  }, [ref.current]);
+  }, [ref]);
 
   return callback;
 }
