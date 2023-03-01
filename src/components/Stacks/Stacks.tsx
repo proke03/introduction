@@ -4,7 +4,7 @@ import { useOnScroll } from '@/hooks';
 import Stack from './Stack';
 
 export default function Stacks() {
-  const ref = useRef(null);
+  const ref = useRef<HTMLHeadingElement>(null);
   useOnScroll({ ref });
 
   return (
