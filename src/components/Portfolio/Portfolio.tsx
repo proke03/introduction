@@ -98,9 +98,9 @@ export default function Portfolio() {
         </div>
       </div>
       <div className="section__container-button">
-        <button aria-label="button  portfolio" type="button" onClick={() => { moveSlide(1); }}>
-          <svg transform="scale(-1, 1)" viewBox="0 0 477.175 477.175">
-            <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z" />
+        <button aria-label="button next portfolio" type="button" onClick={() => { moveSlide(1); }}>
+          <svg viewBox="0 0 477.175 477.175">
+            <path d="M331.987,238.575l-215.5-215.5c-5.3-5.3-5.3-13.8,0-19.1s13.8-5.3,19.1,0l225.1,225.1c5.3,5.3,5.3,13.8,0,19.1l-225.1,225c-2.6,2.6-6.1,4-9.5,4s-6.9-1.3-9.5-4c-5.3-5.3-5.3-13.8,0-19.1L331.987,238.575z" />
           </svg>
         </button>
       </div>
@@ -139,6 +139,7 @@ const StyledWrapper = styled.section`
 
   div.section__container-button:last-child{
     right: 0;
+
   }
 
   div.section__carousel{
